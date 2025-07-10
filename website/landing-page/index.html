@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Emergent Civilization • The greatest human‑behaviour experiment in Minecraft</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        :root {
+            --red: #BE1C1C;
+            --green: #0D7F34;
+            --blue: #1E78B3;
+            --gold: #F2C94C;
+            --bg: linear-gradient(135deg, #F28A32 0%, #F2C94C 25%, #1E78B3 80%, #104B7A 100%);
+            font-family: "Rubik", system-ui, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            text-align: center;
+            color: #fff;
+            background: var(--bg);
+            padding: 1rem
+        }
+
+        h1 {
+            font-size: clamp(2.2rem, 4vw+1rem, 3.6rem);
+            margin: .2em 0 .4em;
+            font-weight: 800;
+            max-width: 16ch;
+            line-height: 1.1
+        }
+
+        .card {
+            background: rgba(0, 0, 0, .38);
+            padding: 2.5rem 2rem;
+            border-radius: 12px;
+            backdrop-filter: blur(6px);
+            max-width: 640px;
+            width: 100%
+        }
+
+        .ip {
+            font-family: monospace;
+            font-size: 1.6rem;
+            font-weight: 700;
+            background: #0006;
+            padding: .45em .7em;
+            border-radius: 8px;
+            margin: 1rem 0;
+            display: inline-block;
+            cursor: pointer
+        }
+
+        a.btn {
+            display: inline-block;
+            margin: .5rem .3rem;
+            padding: .8rem 1.4rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform .15s
+        }
+
+        .btn-discord {
+            background: var(--green);
+            color: #fff
+        }
+
+        .btn-map {
+            background: var(--red);
+            color: #fff
+        }
+
+        a.btn:hover {
+            transform: translateY(-2px)
+        }
+
+        footer {
+            font-size: .8rem;
+            color: #eee;
+            margin-top: 2rem
+        }
+
+        @media(max-width:480px) {
+            .card {
+                padding: 2rem 1.2rem
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="card">
+        <h1>The greatest human‑behaviour<br> experiment in Minecraft</h1>
+
+        <div class="ip" title="Click to copy IP" onclick="copyIP()">
+            ns5031895.ip-148-113-206.net:25565
+        </div>
+
+        <div>
+            <a class="btn btn-discord" href="https://discord.gg/4FK5z4MaKb" target="_blank" rel="noopener">Join our
+                Discord</a>
+        </div>
+
+        <p style="margin-top:1.2rem;font-size:.95rem">
+            Weekly sessions · One life · No scripts · Record everything
+        </p>
+    </main>
+
+    <footer>&copy; 2025 Emergent Civilization. Not affiliated with Mojang AB.</footer>
+
+    <script>
+        function copyIP() {
+            navigator.clipboard.writeText("ns5031895.ip-148-113-206.net:25565")
+                .then(() => alert("Server IP copied to clipboard!"));
+        }
+    </script>
+</body>
+
+</html>
