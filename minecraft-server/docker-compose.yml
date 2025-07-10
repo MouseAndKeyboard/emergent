@@ -15,10 +15,9 @@ services:
       ENABLE_WHITELIST: "true"
       ENABLE_DYNMAP: "true"
       SPAWN_PROTECTION: 0
+      MOTD: "§aWelcome to §bEmergent Civilization! §fThe greatest human behaviour experiment."
     ports:
       - "25565:25565"
       - "8123:8123" # Dynmap
     volumes:
       - ./data:/data
-  environment:
-  MOTD: "§aWelcome to §bEmergent Civilization! §fThe greatest human behaviour experiment."
