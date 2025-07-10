@@ -8,7 +8,7 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: PAPER
-      VERSION: 1.20.4
+      VERSION: 1.21.7
       MEMORY: "16G"
       ENABLE_RCON: "true"
       RCON_PASSWORD: "Pluto2001"
