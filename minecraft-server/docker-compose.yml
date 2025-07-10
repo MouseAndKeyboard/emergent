@@ -12,7 +12,6 @@ services:
       MEMORY: "16G"
       ENABLE_RCON: "true"
       RCON_PASSWORD: "Pluto2001"
-      ENABLE_WHITELIST: "true"
       ENABLE_DYNMAP: "true"
       SPAWN_PROTECTION: 0
       MOTD: "§aWelcome to §bEmergent Civilization! §fThe greatest human behaviour experiment."
