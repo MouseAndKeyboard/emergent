@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    container_name: minecraft
+    restart: unless-stopped
+    environment:
+      EULA: "TRUE"
+      TYPE: PAPER
+      VERSION: 1.20.4
+      MEMORY: "16G"
+      ENABLE_RCON: "true"
+      RCON_PASSWORD: "Pluto2001"
+      ENABLE_WHITELIST: "true"
+      ENABLE_DYNMAP: "true"
+      SPAWN_PROTECTION: 0
+    ports:
+      - "25565:25565"
+      - "8123:8123" # Dynmap
+    volumes:
+      - ./data:/data

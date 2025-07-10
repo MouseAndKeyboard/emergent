@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  website:
+    image: nginx:stable-alpine
+    container_name: ec-website
+    restart: unless-stopped
+    volumes:
+      - ./landing-page:/usr/share/nginx/html:ro
+    ports:
+      - "8080:80"
